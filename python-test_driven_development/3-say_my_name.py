@@ -1,4 +1,4 @@
-!/usr/bin/python3
+#!/usr/bin/python3
 """A function that prints the user's first name and last name"""
 
 
