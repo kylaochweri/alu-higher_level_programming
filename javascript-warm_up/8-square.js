@@ -1,12 +1,13 @@
 #!/usr/bin/node
-const number = parseInt(process.argv[2]);
-
-if (number) {
-  for (let i = 0; i < number; i++) {
-    console.log('X'.repeat(number));
-  }
-} else if (number < 0) {
-  console.log();
-} else {
+const size = parseInt(process.argv[2]);
+if (Number.isNaN(size)) {
   console.log('Missing size');
+} else {
+  for (let i = 0, s; i < size; i++) {
+    s = '';
+    for (let j = 0; j < size; j++) {
+      s += 'X';
+    }
+    console.log(s);
+  }
 }
